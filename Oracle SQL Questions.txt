@@ -1,0 +1,127 @@
+What is Oracle?
+
+Oracle is an Information technology firm who is famous for developing the relational database management system Oracle Database. It is a database management system that runs on SQL (Structured Query Language) used to store and handle large datasets. Oracle Database runs on all major operating systems like Windows, UNIX, Linux, and Mac OS.
+
+How to check Oracle version?
+
+To find out the Oracle version connect to the database. After that, execute SQL statement SELECT * FROM v$version; and hit Enter. The Oracle version name will be written in the first line of the result after the Oracle Database.
+
+What is materialized view in Oracle?
+
+In Oracle, a materialized view contains the result of an executed query. Apart from results, they also contain other materialized views, query tables and views. The materialized views let the user store and manage data that is located on a remote location on their local nodes for replication. It is a database object.
+
+What is Dual in Oracle?   
+
+Dual is a part of the Data dictionary that is created with every installation of Oracle. This table consists of one row and a column called dummy. The value of the row here is X. The table can be accessed by any user irrespective of their permissions or assigned roles. It is useful for choosing a pseudo column USER or SYSDATE.
+
+Why we use cursor in Oracle?
+
+In Oracle, a context area is created for processing an SQL statement. A cursor is used as a pointer to this context area. The PL/SQL gains access to this area or controls this area through the cursor.
+
+What is ref cursor in Oracle?
+
+
+A ref cursor is a data type that is used to point or refer to a particular memory address the database. Therefore, in order to access it, the client has to be connected to the database during the entire lifetime of the ref cursor.
+
+How to check tablespace in Oracle?
+
+The tablespace in Oracle is used for checking the space available to create new users in the database. The view the existing files tablespace files in Oracle the following query needs to be executed:
+
+SELECT  FILE_NAME, BLOCKS, TABLESPACE_NAMEFROM DBA_DATA_FILES;
+What is ASM in Oracle?
+
+The ASM (Automatic Storage Management) is a feature that is included in Oracle that works as a disk manager. It provides the foundation of efficient data management that has features like mirroring, stripping, managed creation of files, dynamic balancing, and storage reconfiguration.
+
+What is toad for Oracle?
+
+TOAD (Tools for Oracle Application Development) is an application development toolset that is used by developers for creating and Oracle based applications and executing them on Windows. It is also used for business intelligence, database development, developing user interfaces, defining business logic, etc.
+
+How to drop index in Oracle?
+
+The drop index command is used for removing an index from a database. Execute the following query to drop an index:
+
+DROP index_name;
+When an index is dropped, the underlying tables, packages, functions, package bodies and procedures get invalidated.
+
+What is bulk collect in Oracle?
+
+The Oracle bull collect is used to fetch data. Using this option, the PL/SQL engine instructs the SQL engine to accumulate as many rows as it can for putting in the collection. After placing the rows in the collection the SQL Engine it changes to the PL/SQL Engine.
+
+What is explain the plan in Oracle & how do we use it?   
+
+
+An Explain Plan is a tool used in Oracle for understanding how a particular query is executed. These plans are useful for improving the efficiency of the database. After the user understands how the query is going to be executed, he can alter the execution environment to increase the speed of the query. The following command is used:
+
+EXPLAIN PLAN SET STATEMENT_ID='1' FOR SQL_statement;
+How to start listener in Oracle?
+
+The Oracle listener is started when the Oracle server machine is restarted. If the listener gets stopped, it can be restarted through the command line. To start the listener the following command has to be executed:
+
+For Windows - LSNRCTL.EXE start
+For Solaris - lsnrctl START
+How to drop constraint in Oracle?     
+
+A constraint can be dropped from Oracle by the following steps:
+
+Use the Alter table command on the table where the constraint exists by the command ALTER TABLE table_name;
+Use the Drop command on the constraint by mentioning the constraint name using the following command
+DROP CONSTRAINT name_of_constraint;
+What is Oracle Golden Gate?
+
+The Oracle Golden gate 12 C is a replication and Change Data Capture (CDC) software package. It is used for data integration in real time, transactional change data capture, transformations, systems verification between enterprise and operational systems, configuration management and enhanced security.
+
+How to rename a column in Oracle?
+
+A column in Oracle can be renamed by using the following commands:
+
+1) Use the Alter table command on the table where the column exists by the command
+
+ALTER TABLE table_name;
+2) Use the Rename command on the column that needs to be changed by the command
+
+RENAME old_col_name to new_col_name;
+How to find sid in Oracle?
+
+The Oracle SID can be figured out through the following commands:
+
+select distinct sid from v$mystat;
+select instance from v$thread;
+select * from global_name;
+What is Oracle Apex?
+
+
+The Oracle Apex or the Oracle Application Express is an application development tool that is used for creating, designing and executing database driven responsive applications. Developing applications on this web-based tool requires little programming language, and can be run on any device like mobile and desktops.
+
+What is SGA in Oracle?
+
+The SGA (System Global Area) is a group of shared memory structures that are shared by the processes that belong to a database instance. They have control information and data required for one database instance.
+
+What is subquery in Oracle?
+
+A subquery can be considered a query which is a part of another query. They can be created within SQL statements using the commands like Where, From and Select. Such a query inside a From clause of a Select statement is called inline view. When it is inside a Where clause, it is called a nested subquery.
+
+How to kill session in Oracle?
+
+The kill a session in Oracle use the  below command:
+
+ALTER SYSTEM KILL SESSION 'sid,serial#';
+What is mutating error in Oracle?
+
+A mutating error is caused in a table that is already getting changed and during the process, a row level trigger tries to alter it too.
+
+How to add primary key in Oracle?
+
+A primary key can be created in Oracle using the create table statement and mentioning the primary key keyword before the intended key. The following command has to be used:
+
+Create Table table_name {Age int;CONSTRAINT constraint_name PRIMARY KEY (column1, column2)}
+What is dense_rank in Oracle?
+
+The DENSE_RANK function in Oracle is used to find the rank of a particular row from a group of rows. This function will always return consecutive rankings. It can be used as an analytic or an aggregate function. For example, the syntax for the function when used as an analytic function is given below:
+
+
+DENSE_RANK( expression1, expression 2 ....) WITHIN GROUP ( ORDER BY expression1, expression 2 ....)
+Explain Oracle Sales Cloud?
+
+The Oracle Sales Cloud is a customer relationship management tool used by organizations for handling the leads and convert them into potential clients to increase the sales.
+
+Added new line
